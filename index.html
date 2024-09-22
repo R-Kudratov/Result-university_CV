@@ -6,74 +6,88 @@
     <meta name="keywords" content="cv, frontend, developer">
     <meta name="description" content="This website is made to store Rustam Kudratov's CV">
     <title>Rustam Kudratov's cv</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="avatar.jpg" alt="Profile image" width="150">
+    <div class="container">
 
-    <h1>Рустам Кудратов</h1>
+        <div class="info">
+            <img src="/img/avatar.jpg" alt="Profile image" width="150">
 
-    <p>На данный момент я студент курса <strong>"С нуля до Middle-разработчика"</strong> в онлайн-школе <strong>Result University</strong></p>
+            <div class="info-text">
+                <h1>Рустам Кудратов</h1>
+            
+                <p>На данный момент я студент курса <strong>"С нуля до Middle-разработчика"</strong> в онлайн-школе <strong>Result University</strong></p>
 
-    <h2>Мои хобби</h2>
-
-    <ol>
-        <li>3d графика</li>
-        <li>3d печать</li>
-        <li>фитнес</li>
-    </ol>
-
-    <h2>Опыт работы</h2>
-
-    <table width="400">
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Мята lounge</td>
-                <td>Барный мастер</td>
-                <td>2018-2020</td>
-            </tr>
-            <tr>
-                <td>Барвиха lounge</td>
-                <td>Старший барный мастер</td>
-                <td>2020-2021</td>
-            </tr>
-            <tr>
-                <td>Japonica</td>
-                <td>Контент-менеджер</td>
-                <td>2021-по н.вр.</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Список социальных сетей:</h2>
-    <form action="/">
-        <a href="https://www.instagram.com/curly.rus/" target="_blank">Instagram</a>
-        |
-        <a href="https://t.me/curly_rus" target="_blank">Telegram</a>
-
+                <h4>Список социальных сетей:</h4>
+                <a href="https://www.instagram.com/curly.rus/" target="_blank">Instagram</a>
+                |
+                <a href="https://t.me/curly_rus" target="_blank">Telegram</a>
+            </div>
+        </div>
         
-        <h2>Связаться со мной</h2>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+        
+    
+        <div class="card hobbie">
+            <h2>Мои хобби</h2>
+        
+            <ol>
+                <li>3d графика</li>
+                <li>3d печать</li>
+                <li>Фитнес</li>
+            </ol>
         </div>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+    
+        <div class="card work">
+            <h2>Опыт работы</h2>
+        
+            <table class="table" width="600">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Мята lounge</td>
+                        <td>Барный мастер</td>
+                        <td>2018-2020</td>
+                    </tr>
+                    <tr>
+                        <td>Барвиха lounge</td>
+                        <td>Старший барный мастер</td>
+                        <td>2020-2021</td>
+                    </tr>
+                    <tr>
+                        <td>Japonica</td>
+                        <td>Контент-менеджер</td>
+                        <td>2021-по н.вр.</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
-        </div>
-        <input type="submit" value="Отправить">
-    </form>
+    
+        <form class="card contact" action="/">
+            <h2>Связаться со мной</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+            </div>
+            <input class="btn" type="submit" value="Отправить">
+        </form>
+    </div>
     
 </body>
 </html>
